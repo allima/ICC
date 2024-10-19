@@ -65,3 +65,4 @@ src/**/renames.txt
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,c++,1c
 produto_matrizes
 area_trinagulo_funcoes
+area_retangulo_funcoes
