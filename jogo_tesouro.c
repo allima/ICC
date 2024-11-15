@@ -62,17 +62,17 @@ void apagar_posicao_heroi()
 }
 void move_esquerda()
 {
-   if (coluna_heroi > 30)
+   if (coluna_heroi > 0)
    {
       apagar_posicao_heroi();
-      coluna_heroi++;
+      coluna_heroi--;
       mover_heroi(linha_heroi, coluna_heroi);
    }
    imprime_tabuleiro(tabuleiro);
 }
 void move_cima()
 {
-   if (linha_heroi < 0)
+   if (linha_heroi > 0)
    {
       apagar_posicao_heroi();
       linha_heroi--;
@@ -82,7 +82,7 @@ void move_cima()
 }
 void move_direita()
 {
-   if (coluna_heroi < 0)
+   if (coluna_heroi < 29)
    {
       apagar_posicao_heroi();
       coluna_heroi++;
@@ -93,12 +93,13 @@ void move_direita()
 void move_baixo()
 {
 
-   if (linha_heroi > 15)
+   if (linha_heroi < 14)
    {
       apagar_posicao_heroi();
       linha_heroi++;
       mover_heroi(linha_heroi, coluna_heroi);
    }
+   imprime_tabuleiro(tabuleiro);
 }
 
 char movimenta_heroi(char movimento)
