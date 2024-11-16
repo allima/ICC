@@ -92,7 +92,6 @@ void move_direita()
 }
 void move_baixo()
 {
-
    if (linha_heroi < 14)
    {
       apagar_posicao_heroi();
